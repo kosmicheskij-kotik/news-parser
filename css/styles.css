@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial, helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    padding: 0 10%;
+    background-color: #FF6D70;
+}
+
+.top-menu .search {
+    display: inline-flex;
+    justify-items: center;
+}
+
+#search-field {
+    margin: 7%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #F4F4F4;
+    padding-left: 4%;
+}
+
+#search-btn {
+    margin: 7%;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #F4F4F4;
+    background-color: transparent;
+    color: #F4F4F4;
+    font-weight: 400;
+    padding: 0 5%;
+}
+
+.top-menu h2 {
+    display: inline-flex;
+    font-size: 1.5rem;
+    color: #F4F4F4;
+}
+
+.more-btn {
+    font-size: 12px;
+    width: 12%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+.news-template {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: 25%;
+}
+
+.content-news {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+.content-error {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #333333;
+    text-align: center;
+}
+
+.btn {
+    border-color: #6e6767;
+    color: #6e6767;
+}
+
+.content-sources {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.content-sources::-webkit-scrollbar-track {
+    border-radius: 1px;
+    background-color: #f1f1f1;
+    width: 75%;
+}
+
+.content-sources::-webkit-scrollbar {
+    width: 20px;
+    background-color: #d1cdcd;
+}
+
+.content-sources::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #FF6D70;
+    width: 70px;
+}
+
+.btn {
+    background: 0 0;
+    border: 0px;
+    line-height: 1;
+    margin: 5px;
+    padding: 8px;
+    color: #000000;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    font-size: 12px;
+}
+
+
+.news-template__item {
+    display: block;
+    width: 30%;
+    flex-direction: row;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 1%;
+    position: relative;
+}
+
+.news__img {
+    display: block;
+    position: relative;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.news__picture {
+    display: block;
+    -webkit-border-radius: 2px 2px 0 0;
+    -moz-border-radius: 2px 2px 0 0;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.news__content {
+    padding: 24px;
+    -webkit-border-radius: 0 0 2px 2px;
+    -moz-border-radius: 0 0 2px 2px;
+    border-radius: 0 0 2px 2px;
+    box-sizing: inherit;
+    border-left: 1px solid rgba(160,160,160,0.2);
+    border-right: 1px solid rgba(160,160,160,0.2);
+}
+
+.news__content p {
+    margin: 0;
+    padding: 0;
+}
+
+.news__title {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.news__source {
+    font-size: 12px;
+    color: #333333;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.news__text {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 0;
+    text-align: justify;
+}
+
+.news-action {
+    border-radius: 0 0 2px 2px;
+    background-color: inherit;
+    border: 1px solid rgba(160,160,160,0.2);
+    position: relative;
+    padding: 16px 24px;
+}
+
+.news__link {
+    color: #FF6D70;
+    margin-right: 24px;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+    text-transform: uppercase;
+}
+
+.loader {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 6vh;
+}
+
+.more-btn {
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #FF6D70;
+    background-color: transparent;
+    color: #FF6D70;
+    font-weight: 400;
+    margin-bottom: 2vh;
+    height: 100%;
+    padding: 0 3%;
+}
+
+  

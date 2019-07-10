@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News API usage on Frontend</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="top-menu">
+        <h2>News</h2>
+        <div class="search">
+            <input type="text" name="search"  id="search-field" placeholder="Search..." class="form-control"/>
+            <input type="button" name="btn-search" id="search-btn" value="Search">
+        </div>
+    </header>
+    <main class="main">
+        <nav>
+            <div class="content-sources" id="resources">
+            </div>
+        </nav>
+        <div class="content-news" id="news">
+        </div>
+        <h2 class="content-error" id="error-block" style="display: none;">
+            There are no articles matching your request
+        </h2>
+        <div class="loader">
+            <input type="button" class="more-btn" id="loadMore" value="Load more">
+        </div>
+    </main>
+
+    <template id="news-template">
+        <div class="news-template__item">
+            <div class="news__img">
+                <img class="news__picture" alt="News image">
+                <h3 class="news__title"></h3>
+            </div>
+            <div class="news__content">
+                <h3 class="news__source"></h3>
+                <p class="news__text"></p>
+            </div>
+            <div class="news-action">
+                <a class="news__link" href="#">More info...</a>
+            </div>
+        </div>
+    </template>
+    <script type="text/javascript" src="./lib/main.js"></script>
+</body>
